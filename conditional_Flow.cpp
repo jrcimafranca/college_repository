@@ -12,13 +12,9 @@ int main(){
 
     if (number_1 > number_2) {
         cout << "The first number which is " << number_1 << " is greater than second number " << number_2 << "." << endl;
-    }
-
-    else if (number_1 < number_2) {
+    } else if (number_1 < number_2) {
         cout << "The first number which is " << number_1 << " is less than second number " << number_2 << "." << endl;
-    }
-
-    else {
+    } else {
         cout << "Both first number " << number_1 << " and second number " << number_2 << " are equal to each other." << endl;
     }
 
