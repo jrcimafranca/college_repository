@@ -13,7 +13,7 @@
         $tempLocation = $_FILES['photo']['tmp_name'];  
         $fileDestination = 'images/' . $image;
 
-        $editSpecificUser = mysqli_query($connectionToDatabase, "UPDATE users SET name='$name', age='$age', email='$email', dateOfBirth='$dateOfBirth, sex='$sex', image='$image' WHERE id='$id'");
+        $editSpecificUser = mysqli_query($connectionToDatabase, "UPDATE users SET name='$name', age='$age', email='$email', dateOfBirth='$dateOfBirth', sex='$sex', image='$image' WHERE id='$id'");
 
         if(move_uploaded_file($tempLocation, $fileDestination)) {
             header("Location: view.php");
@@ -23,4 +23,5 @@
     }else{
         echo "Query failed.";
     }
+
 ?>
